@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
       email: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || 'Enter a valid email address.',
       phone: v => v.trim() === '' || /^[0-9+\-\s()]{7,15}$/.test(v) || 'Enter a valid phone number.',
       service: v => v !== '' || 'Choose a service.',
-      message: v => v.trim().length > 9 || 'Tell us a little about your goals (10+ characters).'
+      message: v => v.trim() === '' || v.trim().length > 9 || 'Tell us a little about your goals (10+ characters).'
     };
 
     const validateField = (field) => {
@@ -179,13 +179,33 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
 
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-        status.textContent = "Thanks — your message is in. We'll reach out within one business day to confirm your free consultation.";
-        status.classList.add('show', 'ok');
-        form.reset();
-      }, 1100);
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(res => res.json())
+        .then(data => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          if (data.success) {
+            status.textContent = "Thanks — your message is in. We'll reach out within one business day to confirm your free consultation.";
+            status.classList.add('show', 'ok');
+            form.reset();
+          } else {
+            status.textContent = 'Something went wrong sending your message. Please try again or WhatsApp us directly.';
+            status.classList.add('show', 'fail');
+          }
+        })
+        .catch(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          status.textContent = 'Something went wrong sending your message. Please try again or WhatsApp us directly.';
+          status.classList.add('show', 'fail');
+        });
     });
   }
 

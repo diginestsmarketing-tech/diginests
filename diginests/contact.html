@@ -64,7 +64,7 @@
     <div class="container">
       <div class="contact-grid">
 
-        <div class="reveal">
+        <!--<div class="reveal">
           <div class="contact-info-card">
             <p class="eyebrow on-dark">Contact details</p>
             <h3>DigiNests</h3>
@@ -86,6 +86,13 @@
 
             <a href="#" id="bookCalendar" class="btn btn-outline" style="margin-top:26px;width:100%;justify-content:center;">📅 Book a slot on our calendar</a>
           </div>
+        </div>-->
+
+        <div class="reveal">
+          <div class="contact-info-card">
+            <h3 style="color: #d0c062;">DigiNests Contact</h3>
+              <p>We’d love to hear from you! Whether you have questions about our digital marketing services, need expert advice, or want to collaborate, our team is here to help. Reach out today and let’s start building your online success together.</p>
+        </div>
         </div>
 
         <div class="reveal">
@@ -93,6 +100,10 @@
           <p>Tell us a bit about your business and goals — we'll come back with a clear next step, not a generic sales pitch.</p>
 
           <form id="consultForm" novalidate>
+            <input type="hidden" name="access_key" value="78dbdb20-bef7-40b8-98ac-8117e6ca3518">
+            <input type="hidden" name="subject" value="New consultation request — DigiNests website">
+            <input type="hidden" name="from_name" value="DigiNests Contact Form">
+            <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-grid">
               <div class="field">
                 <label for="name">Full name</label>
@@ -191,7 +202,7 @@
 </a>
 
 <script src="script.js"></script>
-<script>
+<!--<script>
   // Pre-select service from ?service= query param, and calendar link fallback
   document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
@@ -204,6 +215,6 @@
       alert('Calendar booking opens in a new tab in the live version — for now, please use the form or call +91 177 250 0123.');
     });
   });
-</script>
+</script>-->
 </body>
 </html>
