@@ -6,3 +6,4 @@
 /privacy.html    /privacy                            301
 /blog/beginners-guide-digital-marketing-shimla.html   /blog/beginners-guide-digital-marketing-shimla   301
 /blog/affordable-seo-services-shimla.html             /blog/affordable-seo-services-shimla             301
+/blog/:slug.html   /blog/:slug   301
