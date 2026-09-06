@@ -241,8 +241,9 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.animation = 'none';
-          void entry.target.offsetWidth;
-          entry.target.style.animation = '';
+          requestAnimationFrame(() => {
+            entry.target.style.animation = '';
+          });
         }
       });
     }, { threshold: 0.4 });
