@@ -5,9 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- header shrink on scroll ---------- */
   const header = document.querySelector('.site-header');
-  const onScroll = () => {
-    if (!header) return;
+  let scrollTicking = false;
+  const applyScrollState = () => {
     header.classList.toggle('scrolled', window.scrollY > 40);
+    scrollTicking = false;
+  };
+  const onScroll = () => {
+    if (!header || scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(applyScrollState);
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
