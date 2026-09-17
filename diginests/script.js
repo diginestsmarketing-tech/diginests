@@ -240,6 +240,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- article share links ---------- */
+  const shareBar = document.querySelector('.article-share');
+  if (shareBar) {
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const shareUrl = encodeURIComponent(canonical ? canonical.href : window.location.href);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const shareText = encodeURIComponent(ogTitle ? ogTitle.content : document.title);
+
+    const targets = {
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`,
+      twitter: `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+      whatsapp: `https://wa.me/?text=${shareText}%20${shareUrl}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`
+    };
+
+    shareBar.querySelectorAll('a').forEach(a => {
+      const label = (a.getAttribute('aria-label') || a.textContent || '').toLowerCase();
+      const key = Object.keys(targets).find(k => label.includes(k)) ||
+                  (label.includes('x /') || label.includes(' x') ? 'twitter' : null);
+      if (!key) return;
+      a.href = targets[key];
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+    });
+  }
+
   /* ---------- ridge draw retrigger on view ---------- */
   const ridges = document.querySelectorAll('.ridge path.ridge-draw');
   if ('IntersectionObserver' in window && ridges.length) {
