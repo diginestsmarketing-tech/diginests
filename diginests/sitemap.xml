@@ -66,6 +66,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.diginests.in/blog/marketing-for-shimla-tourism</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.diginests.in/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
