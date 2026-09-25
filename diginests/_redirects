@@ -4,6 +4,9 @@
 /contact.html    /contact                            301
 /blog.html       /blog                               301
 /privacy.html    /privacy                            301
-/blog/beginners-guide-digital-marketing-shimla.html   /blog/beginners-guide-digital-marketing-shimla   301
-/blog/affordable-seo-services-shimla.html             /blog/affordable-seo-services-shimla             301
+
 /blog/:slug.html   /blog/:slug   301
+/sitemap.xml   https://www.diginests.in/sitemap.xml   301!
+http://diginests.in/*        https://www.diginests.in/:splat   301
+https://diginests.in/*       https://www.diginests.in/:splat   301
+http://www.diginests.in/*    https://www.diginests.in/:splat   301
