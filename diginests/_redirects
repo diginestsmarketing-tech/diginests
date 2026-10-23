@@ -4,5 +4,5 @@
 /contact.html    /contact                            301
 /blog.html       /blog                               301
 /privacy.html    /privacy                            301
-
+/thank-you.html   /thank-you   301
 /blog/:slug.html   /blog/:slug   301

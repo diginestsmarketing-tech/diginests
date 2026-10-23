@@ -201,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status.textContent = "Thanks — your message is in. We'll reach out within one business day to confirm your free consultation.";
             status.classList.add('show', 'ok');
             form.reset();
+            window.location.href = 'thank-you.html';
           } else {
             status.textContent = 'Something went wrong sending your message. Please try again or WhatsApp us directly.';
             status.classList.add('show', 'fail');
