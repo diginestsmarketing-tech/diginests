@@ -201,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
             status.textContent = "Thanks — your message is in. We'll reach out within one business day to confirm your free consultation.";
             status.classList.add('show', 'ok');
             form.reset();
-            window.location.href = 'thank-you.html';
           } else {
             status.textContent = 'Something went wrong sending your message. Please try again or WhatsApp us directly.';
             status.classList.add('show', 'fail');
@@ -284,3 +283,61 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+
+/* ---------- service-page lead forms -> WhatsApp ---------- */
+(function(){
+  document.querySelectorAll('form[data-wa-form]').forEach(function(f){
+    var status=f.querySelector('.form-status');
+    f.addEventListener('submit',function(e){
+      e.preventDefault(); var ok=true, lines=[f.getAttribute('data-wa-intro')||'Hi DigiNests,'];
+      f.querySelectorAll('input,select').forEach(function(el){
+        if(!el.name) return;
+        var val=(el.value||'').trim(), bad=!val;
+        if(el.type==='tel') bad=val.replace(/\D/g,'').length<10;
+        el.closest('.field').classList.toggle('error',bad); if(bad) ok=false;
+        var lab=f.querySelector('label[for="'+el.id+'"]'); lines.push((lab?lab.textContent.trim():el.name)+': '+val);
+      });
+      if(!ok){ var first=f.querySelector('.field.error input, .field.error select'); if(first) first.focus(); return; }
+      window.open('https://wa.me/917876832529?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+      if(status) status.textContent='Opening WhatsApp to send your request\u2026';
+      f.reset();
+      f.dispatchEvent(new CustomEvent('wa-sent',{bubbles:true}));
+    });
+  });
+})();
+
+/* ---------- audit pop-up modal + sticky quick-jump bar ---------- */
+(function(){
+  var header=document.querySelector('.site-header'), root=document.documentElement;
+  function setHdr(){ if(header) root.style.setProperty('--hdr-h',header.getBoundingClientRect().height+'px'); }
+  setHdr(); window.addEventListener('resize',setHdr); window.addEventListener('scroll',function(){ requestAnimationFrame(setHdr); },{passive:true});
+  if(header) header.addEventListener('transitionend',setHdr);
+
+  var modal=document.getElementById('auditModal');
+  if(modal){
+    var lastFocus=null;
+    function openM(e){ if(e) e.preventDefault(); lastFocus=document.activeElement; modal.hidden=false; document.body.style.overflow='hidden';
+      var first=modal.querySelector('input'); if(first) setTimeout(function(){first.focus();},30); }
+    function closeM(){ modal.hidden=true; document.body.style.overflow=''; if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+    document.querySelectorAll('[data-open-audit]').forEach(function(b){ b.addEventListener('click',openM); });
+    modal.querySelectorAll('[data-close-audit]').forEach(function(b){ b.addEventListener('click',closeM); });
+    modal.addEventListener('click',function(e){ if(e.target===modal) closeM(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!modal.hidden) closeM(); });
+    modal.addEventListener('wa-sent',function(){ setTimeout(closeM,900); });
+  }
+
+  var bar=document.querySelector('.quick-jump');
+  if(bar && 'IntersectionObserver' in window){
+    var links={}; bar.querySelectorAll('a[data-jump]').forEach(function(a){ links[a.getAttribute('data-jump')]=a; });
+    function setActive(id){
+      Object.keys(links).forEach(function(k){ var on=(k===id); links[k].classList.toggle('active',on); if(on) links[k].setAttribute('aria-current','true'); else links[k].removeAttribute('aria-current'); });
+      var a=links[id]; if(a && a.scrollIntoView && bar.firstElementChild.scrollWidth>bar.firstElementChild.clientWidth){ a.scrollIntoView({inline:'center',block:'nearest'}); }
+    }
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) setActive(en.target.id); });
+    },{rootMargin:'-35% 0px -55% 0px'});
+    Object.keys(links).forEach(function(id){ var s=document.getElementById(id); if(s) io.observe(s); });
+    window.addEventListener('scroll',function(){ if(window.scrollY<200) Object.keys(links).forEach(function(k){ links[k].classList.remove('active'); }); },{passive:true});
+  }
+})();

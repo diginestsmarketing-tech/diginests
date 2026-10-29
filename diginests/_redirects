@@ -4,5 +4,9 @@
 /contact.html    /contact                            301
 /blog.html       /blog                               301
 /privacy.html    /privacy                            301
-/thank-you.html   /thank-you   301
+/seo-services-shimla.html   /seo-services-shimla   301
+/google-ads-shimla.html   /google-ads-shimla   301
+/social-media-marketing-shimla.html   /social-media-marketing-shimla   301
+/content-marketing-shimla.html   /content-marketing-shimla   301
+
 /blog/:slug.html   /blog/:slug   301
