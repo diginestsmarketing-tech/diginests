@@ -59,6 +59,16 @@
 }
 </script>
 
+<style>
+/* Home page: make card links stand out */
+.card .card-link{background:var(--pine-950);color:var(--cream-50);padding:11px 20px;border-radius:30px;font-size:.92rem;border:2px solid var(--pine-950);box-shadow:0 4px 12px rgba(14,33,26,.18);transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.card .card-link svg{width:16px;height:16px;color:var(--gold-400);transition:transform .2s ease,color .2s ease}
+.card .card-link::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+.card:hover .card-link,.card .card-link:hover,.card .card-link:focus-visible{background:var(--gold-500);border-color:var(--gold-500);color:var(--pine-950);transform:translateY(-2px);box-shadow:0 8px 18px rgba(228,162,51,.35)}
+.card:hover .card-link svg,.card .card-link:hover svg{color:var(--pine-950);transform:translateX(5px)}
+.blog-card .read-more{background:var(--pine-950);color:var(--cream-50);padding:10px 20px;border-radius:30px;border:2px solid var(--pine-950);box-shadow:0 4px 12px rgba(14,33,26,.18);transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.blog-card .read-more:hover,.blog-card .read-more:focus-visible{background:var(--gold-500);border-color:var(--gold-500);color:var(--pine-950);transform:translateY(-2px)}
+</style>
 </head>
 <body data-page="home">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -162,7 +172,7 @@
       <div class="section-head reveal">
         <p class="eyebrow">What we do</p>
         <h2>Digital Marketing Services in Shimla — Built for Measurable Growth</h2>
-        <p>DigiNests is a digital marketing agency in Shimla, Himachal Pradesh, helping local businesses build a stronger online presence and achieve measurable growth. We offer affordable, result-driven digital marketing services, including SEO, Google Ads, social media marketing, and content marketing. Our strategies are tailored to each business, helping small and growing brands reach the right audience, generate quality leads, and grow online without unnecessary marketing costs. With a focus on transparency, personalized strategies, and measurable results, DigiNests aims to be a trusted digital marketing partner for businesses in Shimla and across Himachal Pradesh.</p>
+        <p>DigiNests is a digital marketing agency in Shimla, Himachal Pradesh, helping local businesses build a stronger online presence and achieve measurable growth. We offer affordable, result-driven <a href="https://www.diginests.in/services" style="color:rgb(20, 96, 218); text-decoration:underline;">digital marketing services,</a> including SEO, Google Ads, social media marketing, and content marketing. Our strategies are tailored to each business, helping small and growing brands reach the right audience, generate quality leads, and grow online without unnecessary marketing costs. With a focus on transparency, personalized strategies, and measurable results, DigiNests aims to be a trusted digital marketing partner for businesses in Shimla and across Himachal Pradesh.</p>
 
       </div>
 
@@ -171,25 +181,25 @@
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
           <h3>SEO Services</h3>
           <p>Technical fixes, content and links that move you up the results page and keep you there.</p>
-          <a href="services.html#seo" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="https://www.diginests.in/seo-services-shimla" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
           <h3>Google Ads Management</h3>
           <p>Search, Shopping and Performance Max campaigns tuned weekly against real cost-per-lead targets.</p>
-          <a href="services.html#ads" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="https://www.diginests.in/google-ads-shimla" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.2"/></svg></div>
           <h3>Social Media Marketing</h3>
           <p>Content calendars, community management and paid social built for brands across Shimla and beyond.</p>
-          <a href="services.html#social" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="https://www.diginests.in/social-media-marketing-shimla" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
           <h3>Content Marketing</h3>
           <p>Blogs, guides and landing pages written to rank, and structured to convert once they do.</p>
-          <a href="services.html#content" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="https://www.diginests.in/content-marketing-shimla" class="card-link">See how <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
