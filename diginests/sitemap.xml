@@ -1,133 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.diginests.in/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/seo-services-shimla</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/google-ads-shimla</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/social-media-marketing-shimla</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/content-marketing-shimla</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/beginners-guide-digital-marketing-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/affordable-seo-services-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/seo-mistakes-businesses-make</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/content-marketing-strategies</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/local-seo-shimla-businesses</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-   <url>
-    <loc>https://www.diginests.in/blog/seo-vs-google-ads-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/digital-marketing-services-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/why-keyword-research-matters</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/marketing-for-shimla-tourism</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-   <url>
-    <loc>https://www.diginests.in/blog/digital-marketing-trends-2026</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/content-marketing-trends-2026</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/Digital-Marketing-Packages-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/voice-search-optimization-shimla-businesses</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/ai-in-digital-marketing</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/choose-digital-marketing-agency-shimla</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/blog/shimla-manali-itinerary</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.diginests.in/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
+<url>
+<loc>https://www.diginests.in/</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/services</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/seo-services-shimla</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/google-ads-shimla</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/social-media-marketing-shimla</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/content-marketing-shimla</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/about</loc>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/contact</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/beginners-guide-digital-marketing-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/affordable-seo-services-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/seo-mistakes-businesses-make</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/content-marketing-strategies</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/local-seo-shimla-businesses</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/seo-vs-google-ads-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/digital-marketing-services-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/why-keyword-research-matters</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/marketing-for-shimla-tourism</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/digital-marketing-trends-2026</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/content-marketing-trends-2026</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/Digital-Marketing-Packages-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/voice-search-optimization-shimla-businesses</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/ai-in-digital-marketing</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/choose-digital-marketing-agency-shimla</loc>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/blog/shimla-manali-itinerary</loc>
+<lastmod>2026-10-31</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.diginests.in/privacy</loc>
+<changefreq>yearly</changefreq>
+<priority>0.2</priority>
+</url>
 </urlset>
