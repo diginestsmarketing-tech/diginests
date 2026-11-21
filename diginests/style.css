@@ -206,3 +206,15 @@ svg,video,iframe{max-width:100%}
 .audit-modal-box{padding:30px 20px 22px}
 .audit-modal-box h2{font-size:1.4rem;padding-right:28px}
 }
+
+/* ===== Blog tables: keep real table layout, fit the mobile screen ===== */
+@media (max-width:640px){
+  .article-body .table-wrap,.article-body div[style*="overflow-x"]{overflow-x:auto!important;margin-left:0!important;margin-right:0!important;max-width:100%}
+  .article-body table{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:auto!important;font-size:.76rem!important;line-height:1.35}
+  .article-body table th,.article-body table td{padding:8px 6px!important;font-size:.76rem!important;line-height:1.35!important;vertical-align:top;white-space:normal!important;overflow-wrap:break-word;word-break:normal;hyphens:none;position:static!important}
+  .article-body table th{font-size:.72rem!important;letter-spacing:0!important;vertical-align:bottom}
+  .article-body table td:first-child{font-weight:700}
+  .article-body table:has(th:nth-child(4)) th,.article-body table:has(th:nth-child(4)) td{padding:7px 4px!important;font-size:.7rem!important}
+  .article-body table:has(th:nth-child(5)) th,.article-body table:has(th:nth-child(5)) td{font-size:.66rem!important;padding:6px 3px!important}
+  .article-body table.case-table td:not(:first-child){overflow-wrap:anywhere}
+}
